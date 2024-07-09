@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <!--title-->
+        <title>interactive-shopping-list</title>
+
+        <!--meta tags-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        
+    </head>
+    <body>
+        <!--header-->
+        <h1>Shopping list</h1>
+        <div class='container'>
+            <form class='shopping-form'>
+                <input type='text' id='item' placeholder='Enter Item'><!--input item space-->
+                <button type="submit">&plus;</button><!--add item button--><br><br>
+            </form>
+            
+            <div class='shopping-notice'>Your shopping list is empty, are you broke?</div>
+            <br><br>
+            <div class='shopping-filter'>
+                <!--all items-->
+                <button data-filter='all' class='active'>All items</button>
+                
+                <!--incomplete list-->
+                <button data-filter="incomplete">Incomplete</button>
+                
+                <!--completed list-->
+                <button data-filter="completed">Completed</button>
+            </div>
+            <br><br>
+            
+            <ul class='shopping-list'></ul>
+            
+            <div class='shopping-action'>
+
+                <!--clear all items button-->
+                <button data-clear="all">Clear Items</button>
+
+                <!--clear completed items button-->
+                <button data-clear="completed">Clear</button>
+            </div>
+        </div>
+    </body>
+    
+    <!--js link-->
+    <script src='/phase-1-code-solutions/index.js'></script>
+</html>
